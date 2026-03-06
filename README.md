@@ -1,0 +1,2 @@
+# LabCompuGrafica
+Repositorio ya corrregido
