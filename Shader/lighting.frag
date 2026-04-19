@@ -1,6 +1,6 @@
 #version 330 core
 
-#define NUMBER_OF_POINT_LIGHTS 4
+#define NUMBER_OF_POINT_LIGHTS 1
 
 struct Material
 {
@@ -47,18 +47,16 @@ struct SpotLight
     vec3 specular;
 };
 
-
 in vec3 FragPos;
 in vec3 Normal;
 in vec2 TexCoords;
 
 out vec4 color;
-//Marín Alva Yulen Caleb Alher
+
 uniform vec3 viewPos;
 uniform DirLight dirLight;
 uniform PointLight pointLights[NUMBER_OF_POINT_LIGHTS];
 uniform SpotLight spotLight;
-uniform SpotLight spotLight2;
 uniform Material material;
 uniform int transparency;
 
